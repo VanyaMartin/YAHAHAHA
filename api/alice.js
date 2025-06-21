@@ -16,6 +16,8 @@ export default async function handler(req, res) {
       user_id: session.user_id || "anonymous_user"
     },
     response: {
+      text: "Слушай музыку",
+      tts: "Слушай музыку",
       end_session: false,
       directives: [
         {
