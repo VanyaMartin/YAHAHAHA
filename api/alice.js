@@ -16,8 +16,8 @@ export default async function handler(req, res) {
       user_id: session.user_id || "anonymous_user",
     },
     response: {
-      text: " ",       // Чтобы не было “запускаю навык”
-      tts: " ",        // То же для озвучки
+      text: "пипи",       // Чтобы не было “запускаю навык”
+      tts: "пипи",        // То же для озвучки
       end_session: false,
       directives: [
         {
