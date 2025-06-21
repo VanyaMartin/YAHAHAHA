@@ -24,7 +24,7 @@ export default async function handler(req, res) {
           type: "AudioPlayer.Play",
           audio_item: {
             stream: {
-              url: "https://vanyamartin-github-io.vercel.app/Neverlove.mp3",
+              url: "https://alice-mp3-skill.vercel.app/Neverlove.mp3",
               offset_ms: 0
             }
           }
