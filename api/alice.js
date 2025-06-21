@@ -13,27 +13,14 @@ export default async function handler(req, res) {
     session: {
       session_id: session.session_id || "default",
       message_id: session.message_id || 0,
-      user_id: session.user_id || "anonymous_user",
+      user_id: session.user_id || "anonymous_user"
     },
     response: {
-      text: "пипи",       // Чтобы не было “запускаю навык”
-      tts: "пипи",        // То же для озвучки
-      end_session: false,
-      directives: [
-        {
-          type: "AudioPlayer.Play",
-          audio_item: {
-            stream: {
-              url: "https://alice-mp3-skill.vercel.app/Neverlove.mp3",
-              offset_ms: 0,
-            },
-          },
-        },
-      ],
-    },
+      text: "YAHAHAHA, я жив и ору прямо из Vercel!",
+      end_session: false
+    }
   };
 
   res.setHeader("Content-Type", "application/json");
   res.status(200).json(response);
 }
-
